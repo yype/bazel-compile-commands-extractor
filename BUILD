@@ -6,6 +6,7 @@ load(":refresh_compile_commands.bzl", "refresh_compile_commands")
 # bazel run @hedron_compile_commands//:refresh_all
 refresh_compile_commands(
     name = "refresh_all",
+    visibility = ["//visibility:public"]
 )
 
 
